@@ -1,0 +1,15 @@
+[project]
+name = "Vales"
+version = "0.1.0"
+dependencies = [
+    "flet>=0.27.6"
+]
+
+[tool.flet.apps.windows]
+product_name = "ValesPdV"
+company_name = "Rodrigo Salgado"
+icon = "assets/Icon.ico"  
+file_description = "Sistema de Vales de Punto de Venta"
+publisher = "Rodrigo Salgado"
+include_data = ["inventario_dulceria.db"]
+include = ["modals/*", "database/*", "assets/*"]
