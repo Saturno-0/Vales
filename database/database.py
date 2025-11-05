@@ -29,7 +29,7 @@ def crear_tablas():
     )
     ''')
     
-     # Nueva tabla para registrar ventas maestras
+    # Nueva tabla para registrar ventas maestras
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS ventas (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -360,7 +360,7 @@ def exportar_inventario_csv():
     # Añadimos cada producto
     for producto in inventario:
         datos_csv.append([str(producto[0]), producto[1], producto[2], 
-                           str(producto[3]), str(producto[4]), producto[5]])
+        str(producto[3]), str(producto[4]), producto[5]])
     
     return datos_csv
 # Crear tablas al importar este módulo
